@@ -1,0 +1,35 @@
+variable "region" {
+  default = "ap-south-1"
+}
+
+variable "vpc_cidr" {
+  default = "10.0.0.0/16"
+}
+
+variable "subnet_cidr" {
+  default = "10.0.1.0/24"
+}
+
+variable "vpc_name" {
+  default = "my-terraform-vpc"
+}
+
+variable "subnet_name" {
+  default = "public-subnet"
+}
+
+variable "igw_name" {
+  default = "my-igw"
+}
+
+variable "route_table_name" {
+  default = "public-route-table"
+}
+
+variable "ami_id" {
+  default = "ami-07a00cf47dbbc844c" # update if needed
+}
+
+variable "instance_type" {
+  default = "t2.micro"
+}
